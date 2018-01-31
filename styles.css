@@ -1,8 +1,9 @@
 body {
     font-family: arial, sans-serif;
     display: grid;
+    height: 100%;
     grid-template-columns: minmax(100px, 1fr) 7fr minmax(100px, 1fr);
-    grid-template-rows: minmax(100px, 1fr) 8fr minmax(100px, 1fr);
+    grid-template-rows: minmax(60px, 1fr) 10fr minmax(60px, 1fr);
 }
 
 header {
@@ -20,15 +21,13 @@ footer {
 
 .center-content {
     text-align: -webkit-center;
-    background: grey;
-    border: 10px solid yellow;
     grid-row: 2 / 3;
     grid-column: 2 / 3;
 }
 
 img {
     padding-top: 150px;
-    padding-bottom: 75px;
+    padding-bottom: 20px;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -50,4 +49,40 @@ img {
 .bottom-right {
     float: right;
     padding-right: 15px;
+}
+
+.input-box {
+    -webkit-box-sizing: border-box;
+    background: #fff;
+    height: 44px;
+    max-width: 484px;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
+}
+
+input {
+    height: 34px;
+    line-height: 34px;
+    font-size: 16px;
+    width: 95%;
+}
+
+input:focus {
+    outline: none;
+}
+
+button {
+    height: 36px;
+    line-height: 27px;
+    background-color: #f2f2f2;
+    border: 1px solid #f2f2f2;
+    border-radius: 2px;
+    font-size: 13px;
+    font-weight: bold;
+    color: #757575;
+    margin: 11px 4px;
+}
+
+button:focus {
+    outline: none;
+    border: 1px solid #4d90fe;
 }
